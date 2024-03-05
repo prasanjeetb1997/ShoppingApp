@@ -2,10 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html{
-  font-size: 100%;
+  font-family: sans-serif;
 }
 
 
@@ -13,16 +10,3 @@ html{
 
 
 
-
-@media only screen and (max-width: 1050px) {
-  html {
-    font-size: 80% !important;
-  }
-}
-
-
-@media only screen and (max-width: 500px) {
-  html {
-    font-size: 50% !important;
-  }
-}

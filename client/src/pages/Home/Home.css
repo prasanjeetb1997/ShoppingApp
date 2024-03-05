@@ -1,0 +1,21 @@
+@media only screen and (min-width: 576px) {
+    main div:nth-child(2) h1 {
+        font-size: large !important;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    main div:nth-child(2) h1 {
+        font-size: x-large !important;
+        font-family: math;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    main div:nth-child(2) h1 {
+        font-size: xx-large !important;
+    }
+
+}

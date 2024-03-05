@@ -1,0 +1,58 @@
+p.card-subtitle {
+    color: #428301
+}
+
+.card-footer button:active {
+    transform: scale(0.98);
+}
+
+
+.card-title {
+    font-size: small;
+}
+
+p.card-text {
+    font-size: small;
+}
+
+button.btn {
+    font-size: x-small;
+}
+
+p.card-subtitle {
+    font-size: small;
+}
+
+@media only screen and (max-width: 576px) {
+    .card-title {
+        margin-bottom: 5px;
+    }
+
+    p.card-text {
+        margin-bottom: 10px;
+        font-size: x-small;
+    }
+
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+    .card-title {
+        font-size: medium;
+    }
+
+    .card-text {
+        font-size: medium;
+    }
+
+    button.btn {
+        font-size: small;
+    }
+
+    p.card-subtitle {
+        font-size: medium;
+    }
+}
