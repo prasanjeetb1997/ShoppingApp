@@ -31,6 +31,9 @@ nav.navbar {
 }
 
 
+ul.navbar-nav li:nth-child(3) {
+    position: relative;
+}
 
 
 
@@ -58,8 +61,37 @@ nav.navbar {
 
 
 @media only screen and (min-width: 576px) {
+    nav.navbar {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
     .navbar-brand img {
         height: 42px;
         width: 75px;
+    }
+
+    .nav-item{
+        border: 1px solid;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    ul.navbar-nav> :not(:last-child) {
+        margin-right: 1.5vw;
+    }
+
+
+    #total-cart-count {
+        position: absolute;
+        top: -11px;
+        right: -11px;
+        color: white;
+        border-radius: 50%;
+        height: 19px;
+        width: 21px;
+        text-align: center;
+        background-color: cadetblue;
+        font-size: small;
     }
 }

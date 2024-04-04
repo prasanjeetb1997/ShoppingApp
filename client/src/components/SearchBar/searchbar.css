@@ -1,0 +1,77 @@
+div form div input.form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: black;
+}
+
+div form div button.btn:active {
+    transform: scale(0.98);
+}
+
+
+@media only screen and (max-width: 576px) {
+
+    div form div input.form-control::placeholder {
+        font-size: x-small;
+    }
+
+    div form div button.btn {
+        font-size: x-small !important;
+        border-color: black;
+        color: white;
+        background-color: black;
+    }
+
+    div form div button.btn:hover {
+        border-color: black;
+        color: black;
+        background-color: white;
+    }
+}
+
+
+@media only screen and (min-width: 576px) {
+
+    #search-bar-container {
+        position: relative;
+        top: calc(50vh - (68px + 40px));
+    }
+
+    div form div input.form-control {
+       border-color: black;
+    }
+
+    div form div.input-group {
+        height: 40px;
+        width: 80%;
+    }
+
+    div form div button.btn {
+        background-color: black;
+        color: white;
+    }
+
+    div form div button.btn:hover {
+        background-color: black;
+        color: white;
+    }
+}
+
+
+
+@media only screen and (min-width: 992px) {
+
+    div form div button.btn {
+      padding-left: 13px !important;
+      padding-right: 13px !important;
+    }
+
+    div form div.input-group {
+        height: 44px;
+    }
+
+    div form div.input-group {
+        width: 55%;
+        max-width: 600px;
+    }
+}

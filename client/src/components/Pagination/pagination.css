@@ -1,0 +1,18 @@
+.pagination{
+    column-gap: 1.5vw;
+    margin: 3rem 0;
+}
+
+.pagination .page-link {
+    color: black;
+}
+
+.pagination .page-link:hover {
+    color: black;
+}
+
+.pagination .active > .page-link {
+    color: white;
+    background-color: gray;
+    border-color: grey;
+}

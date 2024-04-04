@@ -1,9 +1,32 @@
-import React from 'react'
-import {Link,NavLink} from "react-router-dom"
+import {useState,useEffect} from 'react'
+import { Link, NavLink } from "react-router-dom"
 import logo from "../../assets/logo.png"
 import "./Header.css"
+import { useSelector } from 'react-redux'
 
 function Header() {
+
+    const addedProductArray = useSelector((state) => state.cart.products)
+
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+
+    useEffect(() => {
+
+        // Function to update windowWidth when the window is resized
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        // Add event listener for window resize
+        window.addEventListener('resize', handleResize);
+
+        // Cleanup: Remove event listener when the component is unmounted
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     return (
         <nav className="navbar sticky-top navbar-expand-lg">
             <div className="container-fluid px-md-5">
@@ -35,8 +58,9 @@ function Header() {
                         </li>
                         <li className="nav-item">
                             <NavLink to='/cart' className="nav-link">
-                                Cart
+                                Cart 
                             </NavLink>
+                            {windowWidth >= 992 && <div id='total-cart-count'>{addedProductArray.length}</div>}
                         </li>
                         <li className="nav-item">
                             <NavLink to='/login' className="nav-link">

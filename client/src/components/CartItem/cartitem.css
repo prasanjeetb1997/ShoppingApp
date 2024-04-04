@@ -1,0 +1,16 @@
+td div:nth-child(2) button:last-child {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    color: rgb(202, 58, 33);
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+}
+
+
+#cart-table tbody td:nth-child(2) button {
+    padding: 3px 8px !important;
+}

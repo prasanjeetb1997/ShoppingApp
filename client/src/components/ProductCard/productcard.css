@@ -3,7 +3,7 @@ p.card-subtitle {
 }
 
 .card-footer button:active {
-    transform: scale(0.98);
+    transform: scale(0.99);
 }
 
 
@@ -24,22 +24,62 @@ p.card-subtitle {
 }
 
 @media only screen and (max-width: 576px) {
+
+    h5.card-title {
+        font-size: x-small;
+    }
+
+    div.card {
+        flex-basis: 145px;
+    }
+
     .card-title {
         margin-bottom: 5px;
     }
 
     p.card-text {
         margin-bottom: 10px;
-        font-size: x-small;
+        font-size: xx-small;
     }
 
+    p.card-subtitle {
+        font-size: x-small;
+        font-family: cursive;
+        color: #009688;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    div.card {
+        flex-basis: 125px;
+    }
+
+}
+
+@media only screen and (min-width: 475px) {
+
+    div.card {
+        flex-basis: 170px;
+    }
 
 }
 
 
+@media only screen and (min-width: 576px) {
+    div.card {
+        flex-basis: 200px;
+    }
+
+}
 
 
 @media only screen and (min-width: 1200px) {
+
+    div.card {
+        flex-basis: 250px;
+    }
+
     .card-title {
         font-size: medium;
     }
